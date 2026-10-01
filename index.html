@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedala Certo | Links</title>
+
+  <!-- 1. Tailwind via CDN: uma linha e todas as classes ficam disponíveis (precisa de internet) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 2. Nosso CSS próprio, para o que o Tailwind não cobre sozinho -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--
+  3. Como ler as classes do Tailwind (cada classe faz UMA coisa):
+     min-h-screen     -> altura mínima = tela inteira
+     bg-[#0f3d3e]     -> cor de fundo personalizada (valor entre colchetes)
+     flex flex-col    -> flexbox em coluna
+     items-center     -> centraliza na horizontal
+     px-4 py-10       -> espaço interno: 4 nas laterais, 10 em cima/embaixo
+-->
+<body class="min-h-screen bg-[#0f3d3e] text-[#f7f8f5] flex flex-col items-center px-4 py-10">
+
+  <main class="w-full max-w-md text-center">
+
+    <!-- 4. Perfil: círculo com iniciais, nome e descrição -->
+    <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-[#f2c230] text-3xl font-extrabold text-[#14211f]">
+      PC
+    </div>
+    <h1 class="mt-4 text-2xl font-bold">Pedala Certo</h1>
+    <p class="mt-1 text-sm text-[#f7f8f5]/80">Oficina de bicicletas em Fortaleza · Seg a Sáb, 8h às 18h</p>
+
+    <!-- 5. Lista de links: space-y-4 coloca espaço vertical entre os botões -->
+    <nav class="mt-8 space-y-4">
+      <!-- "link-btn" é uma classe nossa (está no style.css); o resto é Tailwind -->
+      <a href="https://seu-usuario.github.io/landing-page/"
+         class="link-btn block rounded-xl bg-[#f2c230] px-6 py-4 font-semibold text-[#14211f]">
+        Conheça nosso site
+      </a>
+      <a href="https://wa.me/5585999999999"
+         class="link-btn block rounded-xl bg-[#f2c230] px-6 py-4 font-semibold text-[#14211f]">
+        Agendar pelo WhatsApp
+      </a>
+      <a href="https://instagram.com/seu-perfil"
+         class="link-btn block rounded-xl border-2 border-[#f2c230] px-6 py-4 font-semibold text-[#f2c230]">
+        Instagram
+      </a>
+      <a href="https://maps.google.com"
+         class="link-btn block rounded-xl border-2 border-[#f2c230] px-6 py-4 font-semibold text-[#f2c230]">
+        Como chegar
+      </a>
+    </nav>
+
+  </main>
+
+  <footer class="mt-12 text-xs text-[#f7f8f5]/60">© 2026 Pedala Certo</footer>
+
+</body>
+</html>

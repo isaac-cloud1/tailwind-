@@ -1,0 +1,21 @@
+/* Fonte do site: se a do sistema não existir, o navegador usa a próxima da lista */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Animação suave nos botões: transition diz "mude devagar" */
+.link-btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* :hover = quando o mouse está em cima. O botão sobe um pouco e ganha sombra */
+.link-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* :focus-visible = quando navega pelo teclado (Tab). Importante para acessibilidade */
+.link-btn:focus-visible {
+  outline: 3px solid #f7f8f5;
+  outline-offset: 3px;
+}
